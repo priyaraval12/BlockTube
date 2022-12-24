@@ -6,14 +6,14 @@ import useStore from '../store/store'
 export default function Video({ horizontal, video, id }) {
     const store = useStore()
     return (
-        <div
+        <div 
             onClick={() => {
                 store.setCurrentVideo(video)
             }}
             className={`${
                 horizontal
                     ? 'flex flex-row mx-5 mb-5  item-center justify-center'
-                    : 'flex flex-col m-5'
+                    : 'flex flex-col m-5 '
             } `}
         >
             <img
@@ -26,15 +26,15 @@ export default function Video({ horizontal, video, id }) {
                 alt=''
             />
             <div className={horizontal && 'ml-3  w-80'}>
-                <h4 className='text-md font-bold dark:text-white mt-3 text-white'>
+                <h4 className='text-md font-bold dark:text-white mt-3 text-black-400'>
                     {video.title}
                 </h4>
-                <p className='text-sm flex items-center text-textSubTitle mt-1 text-white'>
+                <p className='text-sm flex items-center text-textSubTitle mt-1 text-black-400'>
                     {video.category +
                         ' • ' +
                         moment(video.createdAt * 1000).fromNow()}
                 </p>
-                <p className='text-sm flex items-center text-textSubTitle mt-1 text-white'>
+                <p className='text-sm flex items-center text-textSubTitle mt-1 text-black-400'>
                     {video?.author?.slice(0, 9)}...{' '}
                     <BiCheck
                         size='20px'

@@ -32,7 +32,7 @@ function Landing() {
     { name: "Gaming", selected: false },
   ];
   return (
-    <section className="relative  text-purple-100 h-screen justify-center items-center w-full">
+    <section className="relative  text-purple-100 h-screen justify-center items-center w-full ">
       <div className="flex justify-start gap-4 px-16 py-4">
         {catagories.map((item) => {
           return (
