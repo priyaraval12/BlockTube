@@ -66,22 +66,22 @@ export default function id() {
           <div className="flex flex-col m-10 justify-between lg:flex-row">
             <div className="lg:w-4/6 w-6/6">
               <Player hash={currentVideo?.hash} />
-              <div className="my-2 text-3xl text-white flex flex-row justify-between items-center">
+              <div className="my-2 text-3xl text-black flex flex-row justify-between items-center">
                 <h1>{currentVideo?.title}</h1>
                 <button
                   onClick={sendTip}
-                  className="text-2xl border-2 px-4 py-1 rounded-lg hover:border-purple-500 hover:text-purple-500 transition-all hover:bg-slate-800 hover:scale-x-105"
+                  className="text-2xl border-2  px-4 py-1 rounded-lg hover:border-purple-500 hover:text-purple-500 transition-all hover:bg-slate-800 hover:scale-x-105"
                 >
                   Tip the owner
                 </button>
               </div>
               <div>
-                <div className="text-white text-xl">
+                <div className="text-black text-xl">
                   {currentVideo?.description}
                 </div>
               </div>
               <div>
-                <div className="text-white text-xl">
+                <div className="text-black text-xl">
                   Uploaded by {currentVideo?.author}
                 </div>
               </div>
@@ -92,15 +92,17 @@ export default function id() {
                 ></input>
               </div>
             </div>
-            <div className="w-2/6 h-full max-h-full overflow-y-visible">
-              <h4 className="text-md font-bold text-white ml-5 mb-3">
+            <div className="w-2/6 h-full max-h-full overflow-y-visible ">
+              <h4 className="text-md font-bold text-black ml-5 mb-3">
                 Related Videos
               </h4>
+       
               {allVideos.map((video, index) => {
                 if (index !== id.id) {
                   return <Video horizontal={true} video={video} id={index} />;
                 }
               })}
+           
             </div>
           </div>
         </div>

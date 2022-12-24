@@ -8,7 +8,7 @@ export default function VideoCard({ id, img, title, description, category }) {
       <div class="container px-5 py-10">
         {/* <div class="flex flex-wrap -m-4 bg-slate-400 justify-center"> */}
         <div class="p-2">
-          <div class="h-full border-[2px] border-slate-500 rounded-lg overflow-hidden">
+          <div class="h-full  border-2 border-zinc-900 border-zinc-900  rounded-lg overflow-hidden  p-6 shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)]">
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
               src={img}
@@ -53,7 +53,7 @@ export default function VideoCard({ id, img, title, description, category }) {
                   </svg>
                   1.2K
                 </span>
-                <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                <span class="text-gray-500 inline-flex items-center leading-none text-sm ">
                   <svg
                     class="w-4 h-4 mr-1"
                     stroke="currentColor"
