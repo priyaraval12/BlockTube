@@ -1,12 +1,12 @@
 import { ethers } from 'hardhat'
 
 async function main() {
-    const VideoGramContract = await ethers.getContractFactory('VideoGram')
-    const DeployContract = await VideoGramContract.deploy()
+    const BlockTubeContract = await ethers.getContractFactory('BlockTube')
+    const DeployContract = await BlockTubeContract.deploy()
 
     await DeployContract.deployed()
 
-    console.log('YouTube deployed to:', DeployContract.address)
+    console.log('BlockTubeContract deployed to:', DeployContract.address)
 }
 
 main()

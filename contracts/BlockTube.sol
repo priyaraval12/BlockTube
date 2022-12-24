@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-contract VideoGram {
+contract BlockTube {
     uint256 public videoCount = 0;
-    string public name = 'VideoGram';
+    string public name = 'BlockTube';
     mapping(uint256 => Video) public videos;
 
     struct Video {
