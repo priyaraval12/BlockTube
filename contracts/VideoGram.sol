@@ -71,7 +71,7 @@ contract VideoGram {
     }
 
     function tipToOwner(address payable videoAuthor) external payable {
-        require(msg.value > 0, 'Pls send more than 0.001 MATIC');
+        require(msg.value > 0, 'Please send more than 0.001 MATIC');
         videoAuthor.transfer(msg.value);
     }
 }
