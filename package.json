@@ -1,5 +1,5 @@
 {
-    "name": "video-gram",
+    "name": "blocktube",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -11,7 +11,7 @@
     "dependencies": {
         "@apollo/client": "^3.6.9",
         "autoprefixer": "^10.4.8",
-        "dotenv": "^16.0.2",
+        "dotenv": "^16.0.3",
         "ethers": "^5.7.0",
         "graphql": "^16.6.0",
         "hardhat": "^2.11.0",

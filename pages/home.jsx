@@ -16,7 +16,7 @@ function Landing() {
   }, []);
 
   const getAllVideos = async () => {
-    const { data } = await client.query({ query: GET_ALL_VIDEOS });
+    const  {data}  = await client.query({ query: GET_ALL_VIDEOS });
     setVideos(data.videos);
     store.setAllVideos(data.videos);
     console.log(data);
@@ -26,7 +26,10 @@ function Landing() {
     { name: "Education", selected: false },
     { name: "Science & Technology", selected: false },
     { name: "Travel", selected: false },
+    { name: "Sports", selected: false },
+    { name: "Cooking", selected: false },
     { name: "Entertainment", selected: false },
+    { name: "Gaming", selected: false },
   ];
   return (
     <section className="relative  text-purple-100 h-screen justify-center items-center w-full">
